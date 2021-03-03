@@ -27,7 +27,9 @@ React is architected this way because of the concept of using states in a one-wa
 
 /* ANSWER:
 
-It could be possible that some other components in your React tree needs to use a part of state, which can raise some issues and complexity. This is what the Redux (which is not a part of React) library attempts to solve. It could be possible that a child component of a React app has a state exclusive to its component. 
+It could be possible that a child component of a React app has a state exclusive to its component, but needs to be updated somewhere? An option is to lift the state. One such external solution is Redux. It tries to mitigate it by having a global repository of states. For instance, there could be a price in your shopping cart that another page (view) needs. Lifting state up is one option to get that data to the needed component.
+
+
 
 */
 
